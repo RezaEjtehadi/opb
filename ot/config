@@ -1,0 +1,8 @@
+.:53 {
+    prometheus 0.0.0.0:9553
+    bind 0.0.0.0 
+    hosts hosts {
+      fallthrough
+    }
+    proxy . 8.8.8.8:53 8.8.4.4:53
+}
